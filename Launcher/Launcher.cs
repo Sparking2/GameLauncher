@@ -25,7 +25,7 @@ namespace Launcher
                 using (Process myProcess = new Process())
                 {
                     myProcess.StartInfo.UseShellExecute = false;
-                    myProcess.StartInfo.FileName = Application.StartupPath + "/WindowsNoEditor/Demo/Binaries/Win64/Demo.exe";
+                    myProcess.StartInfo.FileName = Application.StartupPath + "/Demo/Binaries/Win64/Demo.exe";
                     myProcess.StartInfo.CreateNoWindow = true;
                     myProcess.Start();
                 }
@@ -60,6 +60,11 @@ namespace Launcher
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void Launcher_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
