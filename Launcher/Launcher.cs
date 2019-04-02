@@ -52,8 +52,7 @@ namespace Launcher
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.ToString() + "\n No puede ejecutar ReadMe");
-                //throw;
+                MessageBox.Show(ex.ToString());
             }
         }
 
